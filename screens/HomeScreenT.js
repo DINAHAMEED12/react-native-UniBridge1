@@ -161,12 +161,12 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   teacherItem: {
-    backgroundColor: "#1B3C87", // Background color for the teacher item
-    padding: 10, // Reduce padding to make the item smaller
-    marginVertical: 5, // Reduce margin for tighter spacing
-    borderRadius: 5, // Smaller border radius for a compact look
+    backgroundColor: "#1B3C87", 
+    padding: 10, 
+    marginVertical: 5, 
+    borderRadius: 5, 
     alignItems: "center",
-    width: "90%", // Make the item width responsive
+    width: "90%", 
     alignSelf: "center",
   },
   teacherName: {

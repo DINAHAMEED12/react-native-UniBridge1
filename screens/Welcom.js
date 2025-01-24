@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, Linking, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import Icon from 'react-native-vector-icons/AntDesign'; // استيراد الأيقونة من مكتبة AntDesign
+import Icon from 'react-native-vector-icons/AntDesign'; 
 
 const Welcome = () => {
     const navigation = useNavigation();
@@ -11,7 +11,7 @@ const Welcome = () => {
     };
 
     const handleNavigateToPage = () => {
-        Linking.openURL('http://your-link-here.com');
+        Linking.openURL('https://youtu.be/8KA-WbdsV5g?si=U338Y28vj383mila');
     };
 
     return (
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     icon: {
         position: 'absolute',
         top: -25,
-        left: 150, // تغيير مكان الأيقونة لتكون على اليمين
+        left: 150, 
     },
     image: {
         width: 300,
