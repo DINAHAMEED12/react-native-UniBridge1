@@ -2,15 +2,13 @@
 
 UniBridge is an innovative app designed to facilitate seamless communication between students and teachers. It provides a platform for students to connect with their teachers for academic guidance and mentorship, while teachers can engage with students, share knowledge, and provide academic support. The app bridges the gap between teachers and students, making communication efficient and effective.
 
-## Features
-
+**Features**
 - **Direct Communication**: Enables easy and quick communication between students and teachers.
 - **Academic Support**: Provides academic guidance for students, helping them with their studies and assignments.
 - **Ongoing Interaction**: Promotes continuous interaction between students and teachers, enhancing the learning experience.
 - **User-Friendly Interface**: The app is designed with a simple and intuitive interface that is easy to navigate for all users.
-
-## Benefits
-
+  
+**Benefits**
 - **Bridges the Gap**: Connects students and teachers in a simple and effective way.
 - **Flexible Learning**: Facilitates academic support and guidance in real-time, making it easy to get help when needed.
 - **Enhanced Learning Experience**: Provides a more interactive and engaging learning environment, improving academic performance.
@@ -29,7 +27,6 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 - **Firebase**: For real-time communication and data management.
 - **Visual Studio Code**:  A lightweight code editor for writing and editing app code with features like syntax highlighting, code completion, and debugging.
 - **Android Studio**:   An IDE for Android development, used for building and testing Android apps on devices or emulators.
-
 
 
 ## Screen Structure:
@@ -68,20 +65,20 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 ## Setup Instructions
 
 ### 1. Clone this Project
-#### • `git clone <project-url.git>`
+- • `git clone <project-url.git>`
 
 ### 2. Install Node.js Packages
    - Make sure **Node.js** is installed on your system. You can download it from [Node.js](https://nodejs.org/).
 
 ### 3. Install Dependencies:
-#### • `npm install`
+**• `npm install`**
 
 ### 4. Set Up Firebase:
-#### • Create a Firebase project, and set up authentication and Firestore according to it. 
-#### • Replace the template values in `firebase.js` with your Firebase Project details.
+- • Create a Firebase project, and set up authentication and Firestore according to it. 
+- • Replace the template values in `firebase.js` with your Firebase Project details.
 
 ### 5. Assets and Environment:
-#### • Place the necessary images (e.g., `image3.png`) inside the `assets` folder.
+- • Place the necessary images (e.g., `image3.png`) inside the `assets` folder.
 
 ## Running the Project
 
@@ -103,19 +100,18 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 
 ## Future Plan:
 
-### 1. We will consider adding a paid-per-hour feature for the teacher.
-### 2. We might also add a small map that shows students the way to the teacher's office.
+- 1. We will consider adding a paid-per-hour feature for the teacher.
+- 2. We might also add a small map that shows students the way to the teacher's office.
 
 ## External Information:
 
-### • Password should not be less than 6 characters/numbers.
-### • Email should be in the correct form (e.g., `xxx@xxx.com`).
+- • Password should not be less than 6 characters/numbers.
+- • Email should be in the correct form (e.g., `xxx@xxx.com`).
 
 ## Resources:
 
-### Home Page / Login Image: [Link](https://pin.it/42OQreyi2)
-
-### Videos that Help with Learning Methods:
+**Home Page / Login Image**: [Link](https://pin.it/42OQreyi2)
+**Videos that Help with Learning Methods**:
 - [Video 1](https://youtu.be/ONAVmsGW6-M?si=vlhJk-dk4_ac1ZIo)
 - [Video 2](https://youtu.be/U1PIrZBgv0U?si=-HOZdUSmrcPrZwUu)
 - [Video 3](https://youtu.be/uA9ejPZiEOw?si=k_BDxV5mX6w59YSg)
