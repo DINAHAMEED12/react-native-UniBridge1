@@ -1,7 +1,4 @@
 # UniBridge
-
-https://www.google.com/search?sca_esv=54ec906adffc8dca&sxsrf=AHTn8zrZuCIpnoalX85E--L-gKU6zejRzg:1737756239435&q=bridge&udm=2&fbs=ABzOT_CsSIKyie1Jr15IW-dxlsbYzWJBw_LSrFd-C2zuDuMzhAgVDwaUqtK2WGH6b_Jc55E3dh7f5IKpeJ3hYA1y0CjtIIoJX2_1UjoLSAjjYyDchf5YltvayBQ_3tTU9Beqzr2Bvrty2uIXDx1x3pnQZ6oDz9oAj7j7C4HCIs4M8u5MSzKjdVsrqPayl_HdvdJuxShzUqkpfUSLSl6_xvLnvtOZTlU-vMkSLYeSnbDrFF83b3okqaavVj3fZv4jlggXSqdfgMVs&sa=X&ved=2ahUKEwjWg-66ro-LAxWJAdsEHZbEN5kQtKgLegQIERAB&biw=1600&bih=732&dpr=1.2#vhid=ZuBMYP-gnv9K3M&vssid=mosaic
-
 UniBridge is an app designed to facilitate seamless communication between students and teachers. It provides a platform for students to connect with their teachers for academic guidance and mentorship, while teachers can engage with students, share knowledge, and provide academic support. The app bridges the gap between teachers and students, making communication efficient and effective.
 
 **Features**
