@@ -17,6 +17,21 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 - **Accessible Anytime, Anywhere**: The app is available on mobile devices, allowing students and teachers to stay connected from any location.
 
 
+## Demo Video
+
+- **Demo Video**: [Watch the Demo Video here](https://youtu.be/8KA-WbdsV5g?si=U338Y28vj383mila)
+
+
+## Technologies Used
+
+- **React Native**(0.76.5): The app is built using React Native, enabling cross-platform support for both Android and iOS.
+- **React Navigation**: Used for navigating between different screens within the app.
+- **Firebase**: For real-time communication and data management.
+- **Visual Studio Code**:  A lightweight code editor for writing and editing app code with features like syntax highlighting, code completion, and debugging.
+- **Android Studio**:   An IDE for Android development, used for building and testing Android apps on devices or emulators.
+
+
+
 ## Screen Structure:
 ### 1.	Welcome Screen (Welcome): Entry/ intro and navigation to login or sign-up.
 ### 2.	Login Screen (Login): Log into an account.
