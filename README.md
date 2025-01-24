@@ -1,3 +1,22 @@
+# UniBridge
+
+UniBridge is an innovative app designed to facilitate seamless communication between students and teachers. It provides a platform for students to connect with their teachers for academic guidance and mentorship, while teachers can engage with students, share knowledge, and provide academic support. The app bridges the gap between teachers and students, making communication efficient and effective.
+
+## Features
+
+- **Direct Communication**: Enables easy and quick communication between students and teachers.
+- **Academic Support**: Provides academic guidance for students, helping them with their studies and assignments.
+- **Ongoing Interaction**: Promotes continuous interaction between students and teachers, enhancing the learning experience.
+- **User-Friendly Interface**: The app is designed with a simple and intuitive interface that is easy to navigate for all users.
+
+## Benefits
+
+- **Bridges the Gap**: Connects students and teachers in a simple and effective way.
+- **Flexible Learning**: Facilitates academic support and guidance in real-time, making it easy to get help when needed.
+- **Enhanced Learning Experience**: Provides a more interactive and engaging learning environment, improving academic performance.
+- **Accessible Anytime, Anywhere**: The app is available on mobile devices, allowing students and teachers to stay connected from any location.
+
+
 ## Screen Structure:
 ### 1.	Welcome Screen (Welcome): Entry/ intro and navigation to login or sign-up.
 ### 2.	Login Screen (Login): Log into an account.
