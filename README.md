@@ -7,7 +7,7 @@ UniBridge is an app designed to facilitate seamless communication between studen
 - **Ongoing Interaction**: Promotes continuous interaction between students and teachers, enhancing the learning experience.
 - **User-Friendly Interface**: The app is designed with a simple and intuitive interface that is easy to navigate for all users.
   
-
+https://www.google.com/search?sca_esv=54ec906adffc8dca&sxsrf=AHTn8zrZuCIpnoalX85E--L-gKU6zejRzg:1737756239435&q=bridge&udm=2&fbs=ABzOT_CsSIKyie1Jr15IW-dxlsbYzWJBw_LSrFd-C2zuDuMzhAgVDwaUqtK2WGH6b_Jc55E3dh7f5IKpeJ3hYA1y0CjtIIoJX2_1UjoLSAjjYyDchf5YltvayBQ_3tTU9Beqzr2Bvrty2uIXDx1x3pnQZ6oDz9oAj7j7C4HCIs4M8u5MSzKjdVsrqPayl_HdvdJuxShzUqkpfUSLSl6_xvLnvtOZTlU-vMkSLYeSnbDrFF83b3okqaavVj3fZv4jlggXSqdfgMVs&sa=X&ved=2ahUKEwjWg-66ro-LAxWJAdsEHZbEN5kQtKgLegQIERAB&biw=1600&bih=732&dpr=1.2#vhid=ZuBMYP-gnv9K3M&vssid=mosaic
 ## Demo Video
 
 - **Demo Video**: [Watch the Demo Video here](https://youtu.be/8KA-WbdsV5g?si=U338Y28vj383mila)
