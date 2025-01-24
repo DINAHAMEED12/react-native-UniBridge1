@@ -65,7 +65,7 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 ## Setup Instructions
 
 ### 1. Clone this Project
-- • `git clone <project-url.git>`
+- `git clone <project-url.git>`
 
 ### 2. Install Node.js Packages
    - Make sure **Node.js** is installed on your system. You can download it from [Node.js](https://nodejs.org/).
@@ -110,7 +110,8 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 
 ## Resources:
 
-**Home Page / Login Image**: [Link](https://pin.it/42OQreyi2)
+**Welcom Page / Home Page / Login Image**: [Link](https://pin.it/42OQreyi2)
+
 **Videos that Help with Learning Methods**:
 - [Video 1](https://youtu.be/ONAVmsGW6-M?si=vlhJk-dk4_ac1ZIo)
 - [Video 2](https://youtu.be/U1PIrZBgv0U?si=-HOZdUSmrcPrZwUu)
