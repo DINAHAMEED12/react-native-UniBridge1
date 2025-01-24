@@ -6,9 +6,7 @@ UniBridge is an app designed to facilitate seamless communication between studen
 - **Academic Support**: Provides academic guidance for students, helping them with their studies and assignments.
 - **Ongoing Interaction**: Promotes continuous interaction between students and teachers, enhancing the learning experience.
 - **User-Friendly Interface**: The app is designed with a simple and intuitive interface that is easy to navigate for all users.
-
-![Uploading 406608733-075a11f7-9052-4808-963f-330ad0099ad1.jpg…]()
-
+  
 
 ## Demo Video
 
