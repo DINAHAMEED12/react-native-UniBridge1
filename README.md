@@ -1,3 +1,48 @@
+## Screen Structure:
+### Welcome Screen (Welcome): Entry/ intro and navigation to login or sign-up.
+### Login Screen (Login): Log into an account.
+### Signup Screen (signup User registration with the selection of a role between a student and Teacher.
+### Home Screens: there is two home screens 
+#### Home screen of students, composed of tabs such as Search, Chats, Profile.
+#### HomeScreenT: Home screen of teachers, composed of tabs such as Search, Chats, Profile.
+### Profile Screens: 
+#### ProfileS: Profile management page for the student.
+#### UpdateProfileS: Edit the student profile information.
+#### ProfileT: Profile management page for the teacher.
+#### UpdateProfileT: Edit the teacher profile information.
+### Search Screen (SearchScreen): Search for teachers with favorite and chat options.
+### Chat Screens: 
+#### ChatListScreen: List of chat conversations.
+#### ChatScreen: Individual chat interface.
+### Role-Based Profile Views: 
+#### ProfileSForT: Student profile as viewed by a teacher.
+#### ProfileTForS: Teacher profile as viewed by a student.
+
+## Setup Instructions
+### 1. Clone this project
+#### git clone < project-url.git >
+### 2. Install Node.js packages
+### 3. Install dependencies: 
+#### npm install
+### 4. Set Up Firebase:
+#### Create a Firebase project, and set authentication and Firestore according to it. Replace the template values in 'firebase.js' from your Firebase Project details
+### 5. Assets and Environment:
+#### Place the needed images (image3.png) inside the assets folder.
+
+## Running the Project
+### 1.	Start the App: Write npm start on terminal. 
+### 2.	Open in Emulator or Physical Device:
+#### 	Use Expo Go to scan the QR code from the terminal.
+#### For Android Emulator: 
+##### Install 'Android Studio'.  Set up 'Android Virtual Device'.
+##### Press a in the terminal to open it in the Android emulator.
+#### For iOS Simulator: 
+##### Install Xcode and open the iOS Simulator
+##### Press i in the terminal to open it in the iOS Simulator.
+### 3.	Debugging:
+#### Database or authentication errors can be checked in the Firebase Console.
+
+
 ## Future plan:
 ### 1-	We will consider adding a paid per hour feature for the teacher.
 ### 2-	We might also add a small map that show student the way to teacher office.
