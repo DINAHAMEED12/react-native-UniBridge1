@@ -18,7 +18,7 @@ const SearchScreen = () => {
   const [query, setQuery] = useState("");
   const [users, setUsers] = useState([]);
   const [favorites, setFavorites] = useState({});
-  const [refreshing, setRefreshing] = useState(false); // State for refresh control
+  const [refreshing, setRefreshing] = useState(false); 
   const navigation = useNavigation();
   const currentUserId = auth.currentUser?.uid;
 
@@ -27,7 +27,7 @@ const SearchScreen = () => {
       const snapshot = await getDocs(collection(db, "users"));
       const filteredUsers = snapshot.docs
         .map((doc) => ({ id: doc.id, ...doc.data() }))
-        .filter((user) => user.role === "Teacher"); // Filter for teachers
+        .filter((user) => user.role === "Teacher"); 
       setUsers(filteredUsers);
     } catch (error) {
       console.error("Error fetching users:", error);
