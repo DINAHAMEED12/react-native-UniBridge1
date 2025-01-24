@@ -30,7 +30,6 @@ const ChatScreen = ({ route, navigation }) => {
 
       setMessages(fetchedMessages);
 
-      // تحديث الرسائل إلى "مقروءة"
       snapshot.docs.forEach(async (docSnapshot) => {
         const msg = docSnapshot.data();
         if (!msg.isRead && msg.receiver === currentUserId) {
@@ -57,7 +56,7 @@ const ChatScreen = ({ route, navigation }) => {
         receiverName: userName,
         timestamp: new Date(),
         participants: [currentUserId, userId],
-        isRead: false, // الرسالة الجديدة تبدأ كغير مقروءة
+        isRead: false, 
       };
 
       await addDoc(collection(db, "chats"), newMessage);

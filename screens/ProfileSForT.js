@@ -1,6 +1,6 @@
-// student profile for users 
+// Student profile for users
 import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, ScrollView, ActivityIndicator } from "react-native";
+import { View, Text, StyleSheet, ScrollView, ActivityIndicator, RefreshControl } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { db } from "../firebase";
 import { doc, getDoc } from "firebase/firestore";
@@ -9,28 +9,35 @@ const StudentProfileScreen = () => {
   const [profile, setProfile] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [refreshing, setRefreshing] = useState(false);
   const route = useRoute();
-  const { userId, userName } = route.params; // جلب userId و userName من التنقل
+  const { userId, userName } = route.params; 
+
+  const fetchProfile = async () => {
+    try {
+      const userDoc = await getDoc(doc(db, "users", userId)); 
+      if (userDoc.exists()) {
+        setProfile(userDoc.data());
+      } else {
+        setError("No profile found.");
+      }
+    } catch (err) {
+      console.error("Error fetching profile data:", err);
+      setError("Failed to fetch profile data.");
+    } finally {
+      setLoading(false); 
+      setRefreshing(false); 
+    }
+  };
 
   useEffect(() => {
-    const fetchProfile = async () => {
-      try {
-        const userDoc = await getDoc(doc(db, "users", userId)); // جلب بيانات الطالب بناءً على userId
-        if (userDoc.exists()) {
-          setProfile(userDoc.data());
-        } else {
-          setError("No profile found.");
-        }
-      } catch (err) {
-        console.error("Error fetching profile data:", err);
-        setError("Failed to fetch profile data.");
-      } finally {
-        setLoading(false); // إنهاء حالة التحميل
-      }
-    };
-
     fetchProfile();
   }, [userId]);
+
+  const onRefresh = () => {
+    setRefreshing(true); 
+    fetchProfile(); 
+  };
 
   if (loading) {
     return (
@@ -50,7 +57,12 @@ const StudentProfileScreen = () => {
   }
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView
+      style={styles.container}
+      refreshControl={
+        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+      }
+    >
       {/* main information */}
       <View style={styles.section1}>
         <Text style={styles.name}>{profile.name || userName || "Unknown Name"}</Text>

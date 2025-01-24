@@ -7,6 +7,8 @@ import { createUserWithEmailAndPassword } from "firebase/auth"
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
+import { sendPasswordResetEmail } from "firebase/auth";
+
 
 const LoginScreen = () => {
     const [email, setEmail] = useState('')
@@ -36,6 +38,20 @@ const LoginScreen = () => {
         }
         catch (error) { alert(error.message) }
     }
+
+    const handleForgotPassword = async () => {
+        if (!email) {
+            alert("Please enter your email address first then click in the button again!");
+            return;
+        }
+        try {
+            await sendPasswordResetEmail(auth, email);
+            alert("we send you an email for reset your password");
+        } catch (error) {
+            alert(error.message);
+        }
+    };
+    
 
     return (
         <KeyboardAvoidingView
@@ -70,6 +86,11 @@ const LoginScreen = () => {
                     <Text style={styles.buttonOutlineText}>you dont have account? Register Now!</Text>
 
                 </TouchableOpacity>
+                <TouchableOpacity
+                    onPress={handleForgotPassword}>
+                <Text style={{ color: '#1B3C87', fontWeight: 'bold' }}>Forgot Password?</Text>
+                </TouchableOpacity>
+
                 <Image source={require('../assets/image3.png')} style={styles.image} />
 
             </View>
@@ -127,7 +148,7 @@ const styles = StyleSheet.create({
         marginTop: 5,
         borderColor: '#1B3C8',
         borderWidth: 2,
-        marginBottom: 40
+        marginBottom: 10
     },
 
     buttonOutlineText: {

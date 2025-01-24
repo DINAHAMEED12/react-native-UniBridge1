@@ -24,6 +24,7 @@ import TeacherProfileScreenT from "./screens/ProfileTForS";
 import ChatScreen from './screens/ChatScreen'; 
 import SearchScreen from './screens/SearchScreen';
 import ChatListScreen from './screens/ChatList';
+import Welcome from './screens/Welcom';
 
 const Stack = createNativeStackNavigator();
 
@@ -56,6 +57,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator >
         {/* Login and Signup Screens */}
+        <Stack.Screen options={{headerShown: false}} name="Welcome" component={Welcome} />
         <Stack.Screen options={{headerShown: false}} name="Login" component={LoginScreen} />
         <Stack.Screen name='signup' component={SigninScreen}/>
 

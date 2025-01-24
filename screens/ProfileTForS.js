@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, RefreshControl } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { db } from "../firebase";
 import { doc, getDoc, setDoc, Timestamp } from "firebase/firestore";
@@ -9,37 +9,44 @@ import { Ionicons } from "@expo/vector-icons";
 const TeacherProfileScreen = () => {
   const [profile, setProfile] = useState({});
   const [isFavorited, setIsFavorited] = useState(false);
+  const [refreshing, setRefreshing] = useState(false); 
   const route = useRoute();
   const { userId, userName } = route.params;
   const navigation = useNavigation();
   const currentUserId = auth.currentUser?.uid;
 
+  const fetchProfile = async () => {
+    try {
+      const userDoc = await getDoc(doc(db, "users", userId));
+      if (userDoc.exists()) {
+        setProfile(userDoc.data());
+      } else {
+        console.log("No profile found");
+      }
+    } catch (error) {
+      console.error("Error fetching profile data:", error);
+    }
+  };
+
+  const checkIfFavorited = async () => {
+    try {
+      const favoriteDocRef = doc(db, "favorites", `${currentUserId}_${userId}`);
+      const favoriteDoc = await getDoc(favoriteDocRef);
+      if (favoriteDoc.exists() && !favoriteDoc.data().removed) {
+        setIsFavorited(true);
+      }
+    } catch (error) {
+      console.error("Error checking favorite status:", error);
+    }
+  };
+
+  const onRefresh = () => {
+    setRefreshing(true); 
+    fetchProfile().then(() => setRefreshing(false));
+    checkIfFavorited().then(() => setRefreshing(false)); 
+  };
+
   useEffect(() => {
-    const fetchProfile = async () => {
-      try {
-        const userDoc = await getDoc(doc(db, "users", userId));
-        if (userDoc.exists()) {
-          setProfile(userDoc.data());
-        } else {
-          console.log("No profile found");
-        }
-      } catch (error) {
-        console.error("Error fetching profile data:", error);
-      }
-    };
-
-    const checkIfFavorited = async () => {
-      try {
-        const favoriteDocRef = doc(db, "favorites", `${currentUserId}_${userId}`);
-        const favoriteDoc = await getDoc(favoriteDocRef);
-        if (favoriteDoc.exists() && !favoriteDoc.data().removed) {
-          setIsFavorited(true);
-        }
-      } catch (error) {
-        console.error("Error checking favorite status:", error);
-      }
-    };
-
     fetchProfile();
     checkIfFavorited();
   }, [userId, currentUserId]);
@@ -74,7 +81,12 @@ const TeacherProfileScreen = () => {
   };
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView
+      style={styles.container}
+      refreshControl={
+        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+      }
+    >
       <View style={styles.section1}>
         <View style={styles.headerContainer}>
           <Text style={styles.name}>{profile.name || userName || "Unknown Name"}</Text>
@@ -143,7 +155,6 @@ const styles = StyleSheet.create({
   },
   section2: {
     padding: 20,
-    borderRadius: 10,
   },
   name: {
     fontSize: 24,

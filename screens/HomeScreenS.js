@@ -26,6 +26,7 @@ const HomeTabNavigator = () => {
           } else if (route.name === "Chats List") {
             iconName = "chatbubbles";
           } else if (route.name === "Search") {
+            
             iconName = "search";
           } else if (route.name === "Profile") {
             iconName = "person";
