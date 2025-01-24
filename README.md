@@ -8,7 +8,6 @@ UniBridge is an app designed to facilitate seamless communication between studen
 - **User-Friendly Interface**: The app is designed with a simple and intuitive interface that is easy to navigate for all users.
 
 <!-- Uploading "chuttersnap\-\-gS54SWrHMg-unsplash.jpg"... -->
-
 ## Demo Video
 
 - **Demo Video**: [Watch the Demo Video here](https://youtu.be/8KA-WbdsV5g?si=U338Y28vj383mila)
