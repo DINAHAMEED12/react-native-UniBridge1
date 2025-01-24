@@ -84,7 +84,7 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 
 ### 1. Start the App:
    - Run the following command in the terminal:
-   #### • `npm start`
+   - **`npm start`**
 
 ### 2. Open in Emulator or Physical Device:
    - **Use Expo Go**: Scan the QR code from the terminal.
