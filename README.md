@@ -1,6 +1,6 @@
 # UniBridge
 
-UniBridge is an innovative app designed to facilitate seamless communication between students and teachers. It provides a platform for students to connect with their teachers for academic guidance and mentorship, while teachers can engage with students, share knowledge, and provide academic support. The app bridges the gap between teachers and students, making communication efficient and effective.
+UniBridge is an app designed to facilitate seamless communication between students and teachers. It provides a platform for students to connect with their teachers for academic guidance and mentorship, while teachers can engage with students, share knowledge, and provide academic support. The app bridges the gap between teachers and students, making communication efficient and effective.
 
 **Features**
 - **Direct Communication**: Enables easy and quick communication between students and teachers.
@@ -8,12 +8,6 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 - **Ongoing Interaction**: Promotes continuous interaction between students and teachers, enhancing the learning experience.
 - **User-Friendly Interface**: The app is designed with a simple and intuitive interface that is easy to navigate for all users.
   
-**Benefits**
-- **Bridges the Gap**: Connects students and teachers in a simple and effective way.
-- **Flexible Learning**: Facilitates academic support and guidance in real-time, making it easy to get help when needed.
-- **Enhanced Learning Experience**: Provides a more interactive and engaging learning environment, improving academic performance.
-- **Accessible Anytime, Anywhere**: The app is available on mobile devices, allowing students and teachers to stay connected from any location.
-
 
 ## Demo Video
 
@@ -23,7 +17,6 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 ## Technologies Used
 
 - **React Native**(0.76.5): The app is built using React Native, enabling cross-platform support for both Android and iOS.
-- **React Navigation**: Used for navigating between different screens within the app.
 - **Firebase**: For real-time communication and data management.
 - **Visual Studio Code**:  A lightweight code editor for writing and editing app code with features like syntax highlighting, code completion, and debugging.
 - **Android Studio**:   An IDE for Android development, used for building and testing Android apps on devices or emulators.
@@ -83,8 +76,7 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 ## Running the Project
 
 ### 1. Start the App:
-   - Run the following command in the terminal:
-   - **`npm start`**
+   - Run the following command in the terminal: **`npm start`**
 
 ### 2. Open in Emulator or Physical Device:
    - **Use Expo Go**: Scan the QR code from the terminal.
