@@ -74,11 +74,11 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 **• `npm install`**
 
 ### 4. Set Up Firebase:
-- • Create a Firebase project, and set up authentication and Firestore according to it. 
-- • Replace the template values in `firebase.js` with your Firebase Project details.
+-  Create a Firebase project, and set up authentication and Firestore according to it. 
+-  Replace the template values in `firebase.js` with your Firebase Project details.
 
 ### 5. Assets and Environment:
-- • Place the necessary images (e.g., `image3.png`) inside the `assets` folder.
+- Place the necessary images (e.g., `image3.png`) inside the `assets` folder.
 
 ## Running the Project
 
@@ -105,8 +105,8 @@ UniBridge is an innovative app designed to facilitate seamless communication bet
 
 ## External Information:
 
-- • Password should not be less than 6 characters/numbers.
-- • Email should be in the correct form (e.g., `xxx@xxx.com`).
+- Password should not be less than 6 characters/numbers.
+- Email should be in the correct form (e.g., `xxx@xxx.com`).
 
 ## Resources:
 
